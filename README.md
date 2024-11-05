@@ -3,18 +3,6 @@
 
 
 > [!NOTE]
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
 > The commands below, will remotely connect to PC.
 > Display the process and query user
 ````
@@ -45,6 +33,20 @@ Get-Process -IncludeUserName | Where-Object {$_.UserName -eq "Domain\username"} 
 >>>> Run the script.
 
 
+
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
 
 
 
