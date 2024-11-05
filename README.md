@@ -15,22 +15,15 @@
 > Critical content demanding immediate user attention due to potential risks.
 
 > [!CAUTION]
-> Negative potential consequences of an action.
-
+> The commands below, will remotely connect to PC.
+> Display the process and query user
 ````
-
 Enter-PSSession
-
 Get-Process | Select-Object Name, CPU, PM
-
 Query user
-
 Get-Process -IncludeUserName | Where-Object {$_.UserName -ne $null} | Select-Object UserName, Name, CPU, PM
-
 Get-Process -IncludeUserName | Where-Object {$_.UserName -eq "Domain\username"} | Select-Object UserName, Name, CPU, PM
-
 Get-Process -IncludeUserName | Where-Object {$_.UserName -eq "Domain\username"} | Select-Object UserName, Name, @{Name="CPU (%)"; Expression={[math]::Round(($_.CPU / (Get-Counter '\Processor Information(_Total)\% Processor Time').CounterSamples.CookedValue) * 100, 2)}}, PM
-
 ````
 
 
