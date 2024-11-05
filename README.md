@@ -1,4 +1,4 @@
-> [!NOTE]
+> [!TIP]
 > # Powershell Remote control commands:
 
 
