@@ -6,7 +6,8 @@
 > The commands below, will remotely connect to PC.
 > Display the process and query user
 
-> > [!IMPORTANT]
+
+> [!IMPORTANT]
 > Open PowerShell as an Administrator.
 > Copy and paste the script into the PowerShell window.
 ````
