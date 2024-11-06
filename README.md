@@ -4,7 +4,6 @@
 
 > [!IMPORTANT]
 > First run Powershell as an Administrator:  
->> Open PowerShell as an Administrator. 
 >>> Copy and paste the command below from the Run window. 
 >>>>
 ````
