@@ -2,17 +2,18 @@
 > # Powershell Remote control commands:
 
 
-> [!NOTE]
-> The commands below, will remotely connect to PC.
-> Display the process and query user
-
-
 > [!IMPORTANT]
-> Open PowerShell as an Administrator.
-> Copy and paste the script into the PowerShell window.
+> Powershell script that automates network reset:  
+>> Open PowerShell as an Administrator. 
+>>> Copy and paste the script into the PowerShell window. 
+>>>> Run the script.
 ````
 C:\WINDOWS\system32\runas.exe /profile /env /user:%userdomain%\a-%username% powershell
 ````
+
+> [!NOTE]
+> The commands below, will remotely connect to PC.
+> Display the process and query user
 ````
 Enter-PSSession
 Get-Process | Select-Object Name, CPU, PM
