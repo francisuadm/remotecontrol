@@ -20,7 +20,7 @@ Get-Process -IncludeUserName | Where-Object {$_.UserName -eq "Domain\username"} 
 Get-Process -IncludeUserName | Where-Object {$_.UserName -eq "Domain\username"} | Select-Object UserName, Name, @{Name="CPU (%)"; Expression={[math]::Round(($_.CPU / (Get-Counter '\Processor Information(_Total)\% Processor Time').CounterSamples.CookedValue) * 100, 2)}}, PM
 ````
 
-> Or Open Powershell as Administrator:  
+> Or Open Powershell as Administrator using Information Rights Management (IRM):  
 >> Copy and paste the command below :
 ````
 irm https://raw.githubusercontent.com/francisuadm/remotecontrol/refs/heads/main/scripts/RemoteControl.ps1 | iex
@@ -31,6 +31,10 @@ irm https://raw.githubusercontent.com/francisuadm/remotecontrol/refs/heads/main/
 powershell -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"irm https://raw.githubusercontent.com/francisuadm/remotecontrol/refs/heads/main/scripts/RemoteControl.ps1 | iex\"' -Verb RunAs"
 ````
 
+>> Same as above but using Invoke-WebRequest:
+````
+powershell -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"iwr -useb https://raw.githubusercontent.com/francisuadm/remotecontrol/refs/heads/main/scripts/RemoteControl.ps1 | iex\"' -Verb RunAs"
+````
 
 > [!NOTE]
 > Create Powershell script called 'RemoteControl' :  
