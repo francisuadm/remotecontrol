@@ -23,12 +23,12 @@ Get-Process -IncludeUserName | Where-Object {$_.UserName -eq "Domain\username"} 
 > Or Open Powershell as Administrator:  
 >> Copy and paste the command below :
 ````
-irm https://github.com/francisuadm/remotecontrol/blob/main/scripts/RemoteControl.ps1 | iex
+irm https://raw.githubusercontent.com/francisuadm/remotecontrol/refs/heads/main/scripts/RemoteControl.ps1 | iex
 ````
 
 >> Better Copy and paste the command below, it will run automatically:
 ````
-powershell -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"iwr -useb https://github.com/francisuadm/remotecontrol/blob/main/scripts/RemoteControl.ps1 | iex\"' -Verb RunAs"
+powershell -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"irm https://raw.githubusercontent.com/francisuadm/remotecontrol/refs/heads/main/scripts/RemoteControl.ps1 | iex\"' -Verb RunAs"
 ````
 
 
