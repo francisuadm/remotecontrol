@@ -28,7 +28,7 @@ irm https://github.com/francisuadm/remotecontrol/blob/main/scripts/RemoteControl
 
 >> Better Copy and paste the command below, it will run automatically:
 ````
-powershell -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"iwr -useb https://github.com/francisuadm/remotecontrol/blob/main/scripts/RemoteControl.ps1 | iex"' -Verb RunAs"
+powershell -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"iwr -useb https://github.com/francisuadm/remotecontrol/blob/main/scripts/RemoteControl.ps1 | iex\"' -Verb RunAs"
 ````
 
 
