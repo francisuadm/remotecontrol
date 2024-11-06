@@ -3,10 +3,10 @@
 
 
 > [!IMPORTANT]
-> Powershell script that automates network reset:  
+> First run Powershell as an Administrator:  
 >> Open PowerShell as an Administrator. 
->>> Copy and paste the script into the PowerShell window. 
->>>> Run the script.
+>>> Copy and paste the command below from the Run window. 
+>>>>
 ````
 C:\WINDOWS\system32\runas.exe /profile /env /user:%userdomain%\a-%username% powershell
 ````
