@@ -5,7 +5,8 @@
 > [!IMPORTANT]
 > First run Powershell as an Administrator:  
 >>> Copy and paste the command below from the Run window. 
->>> ```` C:\WINDOWS\system32\runas.exe /profile /env /user:%userdomain%\a-%username% powershell ````
+>>>
+>>> ````C:\WINDOWS\system32\runas.exe /profile /env /user:%userdomain%\a-%username% powershell````
 
 > [!NOTE]
 > The commands below, will remotely connect to PC.
